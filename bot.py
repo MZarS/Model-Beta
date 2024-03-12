@@ -1,5 +1,7 @@
+import chatterbot
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
+
 #import googletrans
 #from googletrans import Translator
 #translator = googletrans.Translator()
@@ -9,7 +11,9 @@ chatbot = ChatBot('Arop0t')
 
 # Create a Trainer instance and train the chatbot
 trainer = ChatterBotCorpusTrainer(chatbot)
-trainer.train('chatterbot.corpus.english')  # You can use other languages as well
+trainer.train('chatterbot.corpus.english')  #You can use other languages as well
+
+
 
 # Get user input and get responses
 while True:
